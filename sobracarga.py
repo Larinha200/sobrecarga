@@ -1,22 +1,29 @@
 class GeradorRelatorio:
-    def gerar(self,titulo=0, corpo=0, rodape=0, paragrafo=0, multi=0, metadados={}):
+    def gerar(self,titulo=, corpo=0, rodape=0, *paragrafo, multi=0, metadados={}):
         while True:
             
                 if titulo == '':
                     print('')
                 else:
                     print(titulo)
-                    break
-            
-                    
+
+                lista = []
                 if not corpo :
                     print('')
                 else:
                     if multi ==1:
-                        for paragrafo in corpo:
-                            print(corpo)
+                        lista.append(paragrafo)
+                        print(lista)  
+                        break
                     else:
                         print(paragrafo)
-            
+                        break
                 if rodape == '':
                     print("rodape")
+                else:
+                    print(rodape)
+                
+                
+
+           
+                
